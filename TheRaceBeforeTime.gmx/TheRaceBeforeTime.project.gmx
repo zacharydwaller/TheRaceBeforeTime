@@ -14,8 +14,10 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\keyboard_control.gml</script>
+    <script>scripts\init_dino.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\obj_dino2</object>
     <object>objects\obj_dino</object>
   </objects>
   <rooms name="rooms">
