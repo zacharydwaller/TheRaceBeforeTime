@@ -19,6 +19,7 @@
   <objects name="objects">
     <object>objects\obj_dino2</object>
     <object>objects\obj_dino</object>
+    <object>objects\obj_gui</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
