@@ -12,6 +12,9 @@
     <background>background\back_grass</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\keyboard_control.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_dino</object>
   </objects>
