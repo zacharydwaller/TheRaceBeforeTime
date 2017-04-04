@@ -58,7 +58,7 @@ for(i = 0; i &lt;= 1; i++)
 
 view_yport[1] = 240;
 
-surface = surface_create(view_wview[0], view_hview[0] * 2);
+surface = surface_create(window_get_width(), window_get_height());
 </string>
           </argument>
         </arguments>
@@ -101,13 +101,20 @@ surface = surface_create(view_wview[0], view_hview[0] * 2);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(surface);
-
-draw_line_width(-10, view_hview[0], view_wview[0] + 10, view_hview[0], 2);
+            <string>with(self)
+{
+    surface_set_target(surface);
     
-surface_reset_target();
-
-draw_surface_stretched(surface, 0, 0, display_get_gui_width(), display_get_gui_height());
+    draw_line_width(-10, window_get_height() / 2, window_get_width(), window_get_height() / 2, 2);
+        
+    surface_reset_target();
+    
+    if(surface_exists(surface))
+    {
+        draw_surface(surface, 0, 0);
+    }
+    
+}
 </string>
           </argument>
         </arguments>
