@@ -13,7 +13,7 @@ with(self)
     {
         isAccelerating = true;
     
-        speed -= acceleration / 4;
+        speed -= acceleration / 2;
     }
     
     if(!isAccelerating && speed > 0)

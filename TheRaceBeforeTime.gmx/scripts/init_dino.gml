@@ -1,8 +1,8 @@
 with(self)
 {
     maxSpeed = 10;
-    acceleration = 0.25;
-    deceleration = 0.1;
+    acceleration = 0.15;
+    deceleration = 0.075;
     
     isAccelerating = false;
     
