@@ -103,7 +103,7 @@ surface = surface_create(view_wview[0], view_hview[0] * 2);
             <kind>1</kind>
             <string>surface_set_target(surface);
 
-draw_line_width(0, view_hview[0], view_wview[0], view_hview[0], 2);
+draw_line_width(-10, view_hview[0], view_wview[0] + 10, view_hview[0], 2);
     
 surface_reset_target();
 

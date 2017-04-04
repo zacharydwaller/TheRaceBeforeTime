@@ -1,10 +1,15 @@
 with(self)
 {
+    isDrifting = false;
+
     maxSpeed = 10;
-    acceleration = 0.15;
-    deceleration = 0.075;
     
-    isAccelerating = false;
+    acceleration = 100;
+    driftAcceleration = acceleration / 2;
+    braking = 0.02;
     
-    turnRate = 5;
+    turnRate = 3.5;
+    driftTurnRate = 5;
+    
+    driftForce = 50;
 }

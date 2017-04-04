@@ -17,7 +17,6 @@
   <scripts name="scripts">
     <script>scripts\dino_kb_control.gml</script>
     <script>scripts\dino_init.gml</script>
-    <script>scripts\dino_collide_obstacle.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_dino2</object>
