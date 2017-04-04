@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Initialize surface</string>
+            <string>Initialize surface and views</string>
           </argument>
         </arguments>
       </action>
@@ -45,7 +45,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface = surface_create(view_wview[0], view_hview[0] * 2);
+            <string>
+for(i = 0; i &lt;= 1; i++)
+{
+    view_enabled[i] = true;
+    view_visible[i] = true;
+    view_wview[i] = 640;
+    view_wport[i] = 640;
+    view_hview[i] = 240;
+    view_hport[i] = 240;
+}
+
+view_yport[1] = 240;
+
+surface = surface_create(view_wview[0], view_hview[0] * 2);
 </string>
           </argument>
         </arguments>
