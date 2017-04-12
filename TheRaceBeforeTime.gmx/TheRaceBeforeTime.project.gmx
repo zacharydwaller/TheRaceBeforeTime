@@ -8,6 +8,9 @@
   <sprites name="sprites">
     <sprite>sprites\spr_dino</sprite>
     <sprite>sprites\spr_clip</sprite>
+    <sprite>sprites\spr_finish</sprite>
+    <sprite>sprites\spr_half</sprite>
+    <sprite>sprites\spr_flagResetter</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_grass</background>
@@ -23,9 +26,14 @@
     <object>objects\obj_dino</object>
     <object>objects\obj_gui</object>
     <object>objects\obj_clip</object>
+    <object>objects\obj_finishLine</object>
+    <object>objects\obj_halfLine</object>
+    <object>objects\obj_flagResetter</object>
+    <object>objects\obj_GameMgr</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

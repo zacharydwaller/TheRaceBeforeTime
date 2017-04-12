@@ -12,4 +12,11 @@ with(self)
     driftTurnRate = 5;
     
     driftForce = 50;
+    
+    laps = 0
+    halfwayFlag = false;
+    
+    isFinished = false;
+    
+    numPlayers++;
 }

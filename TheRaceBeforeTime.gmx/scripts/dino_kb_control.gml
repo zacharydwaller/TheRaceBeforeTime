@@ -1,5 +1,7 @@
 with(self)
 {
+    if(isFinished) return 0;
+
     // Turning
     var curAccel = acceleration;
     var curTurnRate = turnRate;

@@ -189,7 +189,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>vk_numpad0</string>
+            <string>vk_rshift</string>
           </argument>
         </arguments>
       </action>

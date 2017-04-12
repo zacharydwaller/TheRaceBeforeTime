@@ -104,9 +104,13 @@ surface = surface_create(window_get_width(), window_get_height());
             <string>with(self)
 {
     surface_set_target(surface);
+    draw_clear_alpha(c_white, 0);
     
     draw_line_width(-10, window_get_height() / 2, window_get_width(), window_get_height() / 2, 2);
         
+    draw_text(0, 0, string(elapsedTime));
+    //draw_text(0, 20, string(ds_queue_tail(finishQueue)));
+    
     surface_reset_target();
     
     if(surface_exists(surface))
