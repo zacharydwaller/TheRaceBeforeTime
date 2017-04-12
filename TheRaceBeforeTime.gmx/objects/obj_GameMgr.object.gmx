@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -29,13 +29,23 @@
 elapsedTime = 0;
 
 globalvar numLaps;
-numLaps = 3;
+numLaps = 1;
 
 globalvar finishQueue;
 finishQueue = ds_queue_create();
 
 globalvar numPlayers;
 numPlayers = 0;
+
+globalvar playerMoney;
+playerMoney[1] = 0;
+playerMoney[2] = 0;
+
+globalvar rewards;
+rewards[1] = 500;
+rewards[2] = 400;
+rewards[3] = 300;
+rewards[4] = 200;
 </string>
           </argument>
         </arguments>
@@ -65,6 +75,38 @@ numPlayers = 0;
             <string>delta_time / 1000000</string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="80">
+      <action>
+        <libid>1</libid>
+        <id>221</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_previous_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="9" enumb="78">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

@@ -11,16 +11,25 @@
     <sprite>sprites\spr_finish</sprite>
     <sprite>sprites\spr_half</sprite>
     <sprite>sprites\spr_flagResetter</sprite>
+    <sprites name="UI">
+      <sprite>sprites\spr_NextRace</sprite>
+      <sprite>sprites\spr_textBack</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\back_grass</background>
     <background>background\tiles_track</background>
+    <background>background\bg_WinRoom</background>
+    <background>background\tiles_GUI</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\dino_kb_control.gml</script>
     <script>scripts\dino_init.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_big</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_dino2</object>
     <object>objects\obj_dino</object>
@@ -30,10 +39,14 @@
     <object>objects\obj_halfLine</object>
     <object>objects\obj_flagResetter</object>
     <object>objects\obj_GameMgr</object>
+    <objects name="UI">
+      <object>objects\obj_NextRace</object>
+      <object>objects\obj_MoneyDisplay</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
+    <room>rooms\track1</room>
+    <room>rooms\win_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
