@@ -13,7 +13,6 @@ with(self)
     
     driftForce = 50;
     
-    laps = 0
     halfwayFlag = false;
     
     isFinished = false;

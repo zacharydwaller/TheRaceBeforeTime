@@ -11,26 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Initialize surface and views</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -45,47 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-for(i = 0; i &lt;= 1; i++)
-{
-    view_enabled[i] = true;
-    view_visible[i] = true;
-    view_wview[i] = 640;
-    view_wport[i] = 640;
-    view_hview[i] = 240;
-    view_hport[i] = 240;
-}
+            <string>globalvar countDown;
+countDown = 3;
 
-view_yport[1] = 240;
-
-globalvar surface;
-surface = surface_create(window_get_width(), window_get_height());
+cTimer = 1.0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Draw GUI</string>
-          </argument>
-        </arguments>
-      </action>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -102,33 +51,37 @@ surface = surface_create(window_get_width(), window_get_height());
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with(self)
-{
-    surface_set_target(surface);
-    draw_clear_alpha(c_white, 0);
-    
-    draw_line_width(-10, window_get_height() / 2, window_get_width(), window_get_height() / 2, 2);
-        
-    draw_text(0, 0, string(elapsedTime));
-    //draw_text(0, 20, string(ds_queue_tail(finishQueue)));
-    
-    // Draw player laps
-    for(i = 0; i &lt; numPlayers; i++)
-    {
-        draw_text(
-            view_wview[i] - 20,
-            view_hview[i] - 20,
-            string(playerLaps[i+1]));
-    }
+            <string>cTimer -= delta_time / 1000000;
 
-    
-    surface_reset_target();
-    
-    if(surface_exists(surface))
-    {
-        draw_surface(surface, 0, 0);
-    }
-    
+if(cTimer &lt;= 0)
+{
+    countDown--;
+    cTimer = 1.0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(countDown &gt;= 0){
+draw_text(view_xview[0] + view_wview[0]/2, view_yview[0]+ view_hview[0]/2 + 25, string(countDown));
 }
 </string>
           </argument>

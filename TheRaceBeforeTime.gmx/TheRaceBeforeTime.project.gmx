@@ -13,6 +13,7 @@
     <sprite>sprites\spr_flagResetter</sprite>
     <sprites name="UI">
       <sprite>sprites\spr_NextRace</sprite>
+      <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_textBack</sprite>
     </sprites>
   </sprites>
@@ -21,6 +22,7 @@
     <background>background\tiles_track</background>
     <background>background\bg_WinRoom</background>
     <background>background\tiles_GUI</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -42,9 +44,13 @@
     <objects name="UI">
       <object>objects\obj_NextRace</object>
       <object>objects\obj_MoneyDisplay</object>
+      <object>objects\obj_start_btn</object>
     </objects>
+    <object>objects\obj_dino_icon</object>
+    <object>objects\obj_start_race_mgr</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room2</room>
     <room>rooms\track1</room>
     <room>rooms\win_room</room>
   </rooms>
