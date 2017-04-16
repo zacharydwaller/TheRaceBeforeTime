@@ -80,10 +80,7 @@ if(cTimer &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(countDown &gt;= 0){
-draw_text(view_xview[0] + view_wview[0]/2, view_yview[0]+ view_hview[0]/2 + 25, string(countDown));
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

@@ -109,16 +109,36 @@ surface = surface_create(window_get_width(), window_get_height());
     
     draw_line_width(-10, window_get_height() / 2, window_get_width(), window_get_height() / 2, 2);
         
-    draw_text(0, 0, string(elapsedTime));
-    //draw_text(0, 20, string(ds_queue_tail(finishQueue)));
+    draw_set_font(font_huge);
+
+    // Draw countdown
+    if(countDown &gt;= 0)
+    {
+        var message;
+        if(countDown &gt; 0) message = string(countDown);
+        else if(countDown == 0) message = "GO";
+    
+        draw_text_color(
+            window_get_width() / 2 - 20,
+            window_get_height() / 2 - 20,
+            message,
+            c_white, c_white, c_white, c_white, 1);
+    }
+    
+    draw_set_font(font_bold);
+    
+    // Draw elapsed time
+    draw_text_color(0, 0, string(elapsedTime),
+        c_white, c_white, c_white, c_white, 1);
     
     // Draw player laps
     for(i = 0; i &lt; numPlayers; i++)
     {
-        draw_text(
-            view_wview[i] - 20,
-            view_hview[i] - 20,
-            string(playerLaps[i+1]));
+        draw_text_color(
+            window_get_width() - 75,
+            (window_get_height() / (1+i)) - 25,
+            "Laps: " + string(playerLaps[i+1]),
+            c_white, c_white, c_white, c_white, 1);
     }
 
     

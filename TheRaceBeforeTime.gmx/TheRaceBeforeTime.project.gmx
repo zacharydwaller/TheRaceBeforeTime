@@ -31,6 +31,8 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_big</font>
+    <font>fonts\font_huge</font>
+    <font>fonts\font_bold</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_dino2</object>
