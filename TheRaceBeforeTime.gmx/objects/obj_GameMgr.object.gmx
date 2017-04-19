@@ -40,10 +40,12 @@ numPlayers = 0;
 globalvar playerLaps;
 playerLaps[1] = 0;
 playerLaps[2] = 0;
+playerLaps[3] = 0;
 
 globalvar playerMoney;
 playerMoney[1] = 0;
 playerMoney[2] = 0;
+playerMoney[3] = 0;
 
 globalvar rewards;
 rewards[1] = 500;

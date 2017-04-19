@@ -24,7 +24,9 @@
     <background>background\tiles_GUI</background>
     <background>background\background4</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pth_track1</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\dino_kb_control.gml</script>
     <script>scripts\dino_init.gml</script>
@@ -36,6 +38,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_dino2</object>
+    <object>objects\obj_comp_dino</object>
     <object>objects\obj_dino</object>
     <object>objects\obj_gui</object>
     <object>objects\obj_clip</object>
