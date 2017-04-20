@@ -25,20 +25,25 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar numTracks;
-numTracks = 1;
+            <string> globalvar numTracks;
+numTracks = 2;
 
 globalvar currentTrack;
 currentTrack = 0;
 
 globalvar tracks;
 tracks[0] = track1;
+tracks[1] = track2;
+
+globalvar paths;
+paths[0] = pth_track1;
+paths[1] = pth_track2;
 
 globalvar elapsedTime;
 elapsedTime = 0;
 
 globalvar numLaps;
-numLaps = 1;
+numLaps = 3;
 
 globalvar finishQueue;
 finishQueue = ds_queue_create();
@@ -155,36 +160,26 @@ for(var i = 1; i &lt;= 4; i++)
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="9" enumb="80">
-      <action>
-        <libid>1</libid>
-        <id>221</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_previous_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
     <event eventtype="9" enumb="78">
       <action>
         <libid>1</libid>
-        <id>222</id>
+        <id>224</id>
         <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
+        <functionname>action_another_room</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>11</kind>
+            <room>win_room</room>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

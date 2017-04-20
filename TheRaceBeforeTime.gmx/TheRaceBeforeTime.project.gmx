@@ -29,6 +29,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_track1</path>
+    <path>paths\pth_track2</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\dino_kb_control.gml</script>
@@ -68,9 +69,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\title_room</room>
-    <room>rooms\track1</room>
-    <room>rooms\room3</room>
     <room>rooms\win_room</room>
+    <room>rooms\track1</room>
+    <room>rooms\track2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

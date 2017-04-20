@@ -5,7 +5,7 @@ with(self)
     
     var curAccel = playerAcceleration[playerNumber - 2];
 
-    var path = pth_track1;
+    var path = paths[currentTrack];
     
     // Powerup handling - prioritize boost
     if((current_time - powerupTime) >= powerupDuration)
