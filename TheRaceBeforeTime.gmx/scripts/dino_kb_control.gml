@@ -3,16 +3,38 @@ with(self)
     if(countDown > 0) return 0;
     if(isFinished) return 0;
 
-    // Turning
     var curAccel = acceleration;
     var curTurnRate = turnRate;
     isDrifting = false;
     
+    // Powerup handling - prioritizing slipping
+    if((current_time - powerupTime) >= powerupDuration)
+    {
+        isBoosting = false;
+        isSlipping = false;
+    }
+    
+    if(isSlipping)
+    {
+        isBoosting = false;
+        curTurnRate /= 4;
+        curAccel /= 4;
+        
+        isDrifting = true;
+    }
+    
+    if(isBoosting)
+    {
+        curTurnRate *= driftTurnMult;
+        curAccel *= 2;
+    }
+    
+    // Drift
     if(keyboard_check(driftKey))
     {
         isDrifting = true;
     
-        curTurnRate = driftTurnRate;
+        curTurnRate *= driftTurnMult;
         curAccel = driftAcceleration;
         
         phy_speed_x = lerp(phy_speed_x, 0, braking / 1.5);
@@ -25,6 +47,7 @@ with(self)
 
     inertia_dir = point_direction(x, y, x + phy_speed_x, y + phy_speed_y);
     
+    // Turning
     if(keyboard_check(leftKey))
     {
         phy_rotation += curTurnRate;

@@ -6,7 +6,26 @@ with(self)
     var curAccel = playerAcceleration[playerNumber - 2];
 
     var path = pth_track1;
-
+    
+    // Powerup handling - prioritize boost
+    if((current_time - powerupTime) >= powerupDuration)
+    {
+        isBoosting = false;
+        isSlipping = false;
+    }
+    
+    if(isBoosting)
+    {
+        isSlipping = false;
+        curAccel *= 2;
+    }
+    
+    if(isSlipping)
+    {
+        curAccel /= 4;
+    }
+    
+    // Get next point
     var moveToApproximation = random_range(25, 75);
     var totalPoints = path_get_number(path);
 

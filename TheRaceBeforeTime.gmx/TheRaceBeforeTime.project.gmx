@@ -10,6 +10,7 @@
     <sprite>sprites\spr_clip</sprite>
     <sprite>sprites\spr_finish</sprite>
     <sprite>sprites\spr_half</sprite>
+    <sprite>sprites\spr_powerSpawn</sprite>
     <sprite>sprites\spr_flagResetter</sprite>
     <sprites name="UI">
       <sprite>sprites\spr_NextRace</sprite>
@@ -61,6 +62,9 @@
     </objects>
     <object>objects\obj_dino_icon</object>
     <object>objects\obj_start_race_mgr</object>
+    <object>objects\obj_slip</object>
+    <object>objects\obj_boost</object>
+    <object>objects\obj_powerSpawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\title_room</room>
