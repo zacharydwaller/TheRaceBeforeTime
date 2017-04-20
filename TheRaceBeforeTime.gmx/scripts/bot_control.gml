@@ -5,7 +5,7 @@ with(self)
 
     var path = pth_track1;
 
-    var moveToApproximation = random_range(15, 75);
+    var moveToApproximation = random_range(25, 75);
     var totalPoints = path_get_number(path);
 
     var nextPointX = path_get_point_x(path, pathIndex);
@@ -22,8 +22,8 @@ with(self)
     var desiredDirection = point_direction(x, y, nextPointX,nextPointY);
     var directionDiff = angle_difference(desiredDirection, direction);
 
-    direction = lerp(direction, direction + directionDiff, 0.1);
-    
+    direction = lerp(direction, direction + directionDiff, 0.05);
+
     //Get Speed
     speed = maxSpeed / 2;
     
