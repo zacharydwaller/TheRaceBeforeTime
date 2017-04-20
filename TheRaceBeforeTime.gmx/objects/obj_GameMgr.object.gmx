@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string> globalvar numTracks;
-numTracks = 2;
+numTracks = 3;
 
 globalvar currentTrack;
 currentTrack = 0;
@@ -34,10 +34,12 @@ currentTrack = 0;
 globalvar tracks;
 tracks[0] = track1;
 tracks[1] = track2;
+tracks[2] = track3;
 
 globalvar paths;
 paths[0] = pth_track1;
 paths[1] = pth_track2;
+paths[2] = pth_track3;
 
 globalvar elapsedTime;
 elapsedTime = 0;
