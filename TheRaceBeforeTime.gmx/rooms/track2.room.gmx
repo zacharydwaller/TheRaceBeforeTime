@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2000</width>
   <height>1500</height>
-  <vsnap>16</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -89,6 +89,21 @@
     <instance objName="obj_dino" x="576" y="128" name="inst_4181B3A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dino2" x="576" y="176" name="inst_F76B53AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_comp_dino" x="576" y="96" name="inst_6D6435BD" locked="0" code="playerNumber = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="1056" y="256" name="inst_1EC58DC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="1120" y="256" name="inst_FBA99CC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="1760" y="352" name="inst_8553B2E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="1824" y="352" name="inst_08947AA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="864" y="1024" name="inst_9D0DBD0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="928" y="1088" name="inst_47293399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="928" y="1312" name="inst_604D1009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="928" y="1376" name="inst_4D7D2B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="160" y="992" name="inst_9D8F53D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="224" y="992" name="inst_73889C7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="320" y="96" name="inst_21DCBBFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="320" y="160" name="inst_3DF42F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="320" y="224" name="inst_9D5E3148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="576" y="800" name="inst_2BD4DF41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerSpawner" x="576" y="864" name="inst_5C8F46D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_track" x="1088" y="128" w="64" h="64" xo="0" yo="0" id="10002174" name="inst_A4CB7D44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
