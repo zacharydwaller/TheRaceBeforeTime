@@ -182,7 +182,7 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = direction;
-image_speed = speed / maxSpeed;
+image_speed = phy_speed / maxSpeed;
 draw_self();
 </string>
           </argument>

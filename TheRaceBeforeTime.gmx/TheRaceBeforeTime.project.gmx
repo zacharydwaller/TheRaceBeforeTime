@@ -63,8 +63,9 @@
     <object>objects\obj_start_race_mgr</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room2</room>
+    <room>rooms\title_room</room>
     <room>rooms\track1</room>
+    <room>rooms\room3</room>
     <room>rooms\win_room</room>
   </rooms>
   <help>

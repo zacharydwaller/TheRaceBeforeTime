@@ -64,7 +64,7 @@
     <instance objName="obj_clip" x="960" y="832" name="inst_98B71530" locked="0" code="" scaleX="15" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_clip" x="1856" y="384" name="inst_231899B5" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_clip" x="640" y="1088" name="inst_489403D6" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_finishLine" x="960" y="544" name="inst_0CBC6362" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_finishLine" x="704" y="64" name="inst_0CBC6362" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_halfLine" x="832" y="64" name="inst_B9954FAD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_flagResetter" x="768" y="64" name="inst_E93ED807" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_dino2" x="640" y="240" name="inst_DBB8C53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

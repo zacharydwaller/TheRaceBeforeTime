@@ -2,6 +2,8 @@ with(self)
 {
     if(countDown > 0) return 0;
     if(isFinished) return 0;
+    
+    var curAccel = playerAcceleration[playerNumber - 2];
 
     var path = pth_track1;
 
@@ -22,18 +24,18 @@ with(self)
     var desiredDirection = point_direction(x, y, nextPointX,nextPointY);
     var directionDiff = angle_difference(desiredDirection, direction);
 
-    direction = lerp(direction, direction + directionDiff, 0.05);
+    direction = lerp(direction, direction + directionDiff, 0.1);
+    
+    // Brake if needed
+    if(abs(directionDiff) > 45)
+    {
+        phy_speed_x = lerp(phy_speed_x, 0, braking);
+        phy_speed_y = lerp(phy_speed_y, 0, braking);
+    }
 
     //Get Speed
-    speed = maxSpeed / 2;
+    var forward_x = cos(degtorad(desiredDirection)) * curAccel;
+    var forward_y = -sin(degtorad(desiredDirection)) * curAccel;
     
-    var desHSpeed = lengthdir_x(speed, direction);
-    var desVSpeed = lengthdir_y(speed, direction);
-    
-    hspeed = lerp(hspeed, desHSpeed, 0.1);
-    vspeed = lerp(vspeed, desVSpeed, 0.1);
-    
-    //Move
-    phy_position_x += hspeed;
-    phy_position_y += vspeed;
+    physics_apply_force(x, y, forward_x, forward_y);
 }
