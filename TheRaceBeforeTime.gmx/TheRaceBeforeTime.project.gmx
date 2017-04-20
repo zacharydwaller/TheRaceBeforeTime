@@ -38,9 +38,10 @@
     <font>fonts\font_bold</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_dino</object>
     <object>objects\obj_dino2</object>
     <object>objects\obj_comp_dino</object>
-    <object>objects\obj_dino</object>
+    <object>objects\obj_comp_dino2</object>
     <object>objects\obj_gui</object>
     <object>objects\obj_clip</object>
     <object>objects\obj_finishLine</object>

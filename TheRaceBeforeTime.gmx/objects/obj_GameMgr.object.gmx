@@ -34,26 +34,31 @@ numLaps = 1;
 globalvar finishQueue;
 finishQueue = ds_queue_create();
 
-globalvar numPlayers;
-numPlayers = 0;
-
-globalvar playerLaps;
-playerLaps[1] = 0;
-playerLaps[2] = 0;
-playerLaps[3] = 0;
-playerLaps[4] = 0;
-
-globalvar playerMoney;
-playerMoney[1] = 0;
-playerMoney[2] = 0;
-playerMoney[3] = 0;
-playerMoney[4] = 0;
-
 globalvar rewards;
 rewards[1] = 500;
 rewards[2] = 400;
 rewards[3] = 300;
 rewards[4] = 200;
+
+globalvar numPlayers;
+numPlayers = 4;
+
+globalvar playerLaps;
+globalvar playerMoney;
+
+globalvar playerSpeed;
+globalvar playerTurnRate;
+globalvar playerAcceleration;
+
+for(var i = 1; i &lt;= 4; i++)
+{
+    playerLaps[i] = 0;
+    playerMoney[i] = 0;
+    playerSpeed[i] = 10;
+    playerTurnRate[i] = 3.5;
+    playerAcceleration[i] = 100;
+}
+
 </string>
           </argument>
         </arguments>

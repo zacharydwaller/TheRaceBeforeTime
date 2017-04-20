@@ -67,9 +67,9 @@
     <instance objName="obj_finishLine" x="704" y="64" name="inst_0CBC6362" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_halfLine" x="832" y="64" name="inst_B9954FAD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_flagResetter" x="768" y="64" name="inst_E93ED807" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_comp_dino" x="640" y="176" name="inst_6C564DA0" locked="0" code="with(self)&#xA;{&#xA;    playerNumber = 3;&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dino2" x="640" y="240" name="inst_DBB8C53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_comp_dino" x="640" y="272" name="inst_EAD0F9C3" locked="0" code="with(self)&#xA;{&#xA;    playerNumber = 4;&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_comp_dino" x="640" y="176" name="inst_E9E8EFBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_comp_dino2" x="640" y="272" name="inst_C828ACDE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_track" x="1728" y="512" w="64" h="64" xo="0" yo="0" id="10000952" name="inst_5F64C6F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

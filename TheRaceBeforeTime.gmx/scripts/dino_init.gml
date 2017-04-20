@@ -2,20 +2,18 @@ with(self)
 {
     isDrifting = false;
 
-    maxSpeed = 10;
+    maxSpeed = playerSpeed[playerNumber];
     
-    acceleration = 100;
+    acceleration = playerAcceleration[playerNumber];
     driftAcceleration = acceleration / 2;
     braking = 0.02;
     
-    turnRate = 3.5;
-    driftTurnRate = 5;
+    turnRate = playerTurnRate[playerNumber];
+    driftTurnRate = turnRate * 1.45;
     
     driftForce = 50;
     
     halfwayFlag = false;
     
     isFinished = false;
-    
-    numPlayers++;
 }
