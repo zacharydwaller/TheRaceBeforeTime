@@ -1,5 +1,6 @@
 with(self)
 {
+    if(countDown > 0) return 0;
     if(isFinished) return 0;
 
     // Turning

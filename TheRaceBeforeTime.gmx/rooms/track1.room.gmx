@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2000</width>
   <height>1500</height>
-  <vsnap>64</vsnap>
-  <hsnap>64</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_GameMgr" x="64" y="0" name="inst_1BCD34D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gui" x="0" y="0" name="inst_5CBB6AB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dino" x="640" y="192" name="inst_E37005F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dino" x="640" y="208" name="inst_E37005F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_start_race_mgr" x="0" y="64" name="inst_0A3E90FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_clip" x="1920" y="64" name="inst_91FD5532" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="obj_clip" x="128" y="64" name="inst_6CF08379" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
@@ -67,8 +67,9 @@
     <instance objName="obj_finishLine" x="704" y="64" name="inst_0CBC6362" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_halfLine" x="832" y="64" name="inst_B9954FAD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_flagResetter" x="768" y="64" name="inst_E93ED807" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_comp_dino" x="640" y="320" name="inst_6C564DA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dino2" x="640" y="256" name="inst_DBB8C53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_comp_dino" x="640" y="176" name="inst_6C564DA0" locked="0" code="with(self)&#xA;{&#xA;    playerNumber = 3;&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dino2" x="640" y="240" name="inst_DBB8C53F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_comp_dino" x="640" y="272" name="inst_EAD0F9C3" locked="0" code="with(self)&#xA;{&#xA;    playerNumber = 4;&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_track" x="1728" y="512" w="64" h="64" xo="0" yo="0" id="10000952" name="inst_5F64C6F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

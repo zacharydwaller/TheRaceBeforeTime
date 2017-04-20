@@ -132,7 +132,7 @@ surface = surface_create(window_get_width(), window_get_height());
         c_white, c_white, c_white, c_white, 1);
     
     // Draw player laps
-    for(i = 0; i &lt; numPlayers; i++)
+    for(i = 0; i &lt; 2; i++)
     {
         draw_text_color(
             window_get_width() - 75,

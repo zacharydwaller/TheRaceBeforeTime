@@ -30,6 +30,7 @@
   <scripts name="scripts">
     <script>scripts\dino_kb_control.gml</script>
     <script>scripts\dino_init.gml</script>
+    <script>scripts\bot_control.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_big</font>
