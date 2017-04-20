@@ -24,6 +24,7 @@
     <background>background\bg_WinRoom</background>
     <background>background\tiles_GUI</background>
     <background>background\background4</background>
+    <background>background\tiles_lava</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_track1</path>
