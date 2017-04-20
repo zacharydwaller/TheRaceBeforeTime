@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>draw_set_font(font_big);
 draw_text_colour(
-    x+18, y+4,
-    string(playerMoney[playerNum]),
+    x+4, y+4,
+    "$" + string(playerMoney[playerNum]),
     c_white, c_white, c_white, c_white, 1.0);
 
 </string>

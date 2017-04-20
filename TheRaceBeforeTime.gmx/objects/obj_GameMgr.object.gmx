@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar elapsedTime;
+            <string>globalvar numTracks;
+numTracks = 1;
+
+globalvar currentTrack;
+currentTrack = 0;
+
+globalvar tracks;
+tracks[0] = track1;
+
+globalvar elapsedTime;
 elapsedTime = 0;
 
 globalvar numLaps;

@@ -13,6 +13,7 @@
     <sprite>sprites\spr_flagResetter</sprite>
     <sprites name="UI">
       <sprite>sprites\spr_NextRace</sprite>
+      <sprite>sprites\spr_Upgrade</sprite>
       <sprite>sprites\spr_start</sprite>
       <sprite>sprites\spr_textBack</sprite>
     </sprites>
@@ -51,7 +52,11 @@
     <objects name="UI">
       <object>objects\obj_NextRace</object>
       <object>objects\obj_MoneyDisplay</object>
+      <object>objects\obj_AccelDisplay</object>
+      <object>objects\obj_TurnRateDisplay</object>
       <object>objects\obj_start_btn</object>
+      <object>objects\obj_UpgradeAccel</object>
+      <object>objects\obj_UpgradeTurn</object>
     </objects>
     <object>objects\obj_dino_icon</object>
     <object>objects\obj_start_race_mgr</object>

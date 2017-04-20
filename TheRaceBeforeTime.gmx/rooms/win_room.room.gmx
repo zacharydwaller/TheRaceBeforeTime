@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -54,14 +54,31 @@
     <instance objName="obj_NextRace" x="864" y="704" name="inst_73B03278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MoneyDisplay" x="192" y="128" name="inst_D0D219CE" locked="0" code="playerNum = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MoneyDisplay" x="704" y="128" name="inst_3DBC257F" locked="0" code="playerNum = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dino_icon" x="288" y="288" name="inst_38587B91" locked="0" code="image_blend = c_red;&#xA;" scaleX="5.22222232818604" scaleY="4.0476188659668" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dino_icon" x="800" y="288" name="inst_995268DD" locked="0" code="image_blend = c_blue;&#xA;" scaleX="5.22222232818604" scaleY="4.0476188659668" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dino_icon" x="288" y="64" name="inst_38587B91" locked="0" code="image_blend = c_maroon;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dino_icon" x="800" y="64" name="inst_995268DD" locked="0" code="image_blend = c_teal;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AccelDisplay" x="192" y="192" name="inst_7E7E0AD8" locked="0" code="playerNum = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_AccelDisplay" x="704" y="192" name="inst_65516093" locked="0" code="playerNum = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TurnRateDisplay" x="192" y="256" name="inst_52E6D80B" locked="0" code="playerNum = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TurnRateDisplay" x="704" y="256" name="inst_1C8484DC" locked="0" code="playerNum = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_UpgradeAccel" x="336" y="192" name="inst_E17763DE" locked="0" code="playerNum = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_UpgradeTurn" x="336" y="256" name="inst_93E28324" locked="0" code="playerNum = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_UpgradeTurn" x="848" y="256" name="inst_9781D08D" locked="0" code="playerNum = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_UpgradeAccel" x="848" y="192" name="inst_F3C34F00" locked="0" code="playerNum = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tiles_GUI" x="192" y="128" w="128" h="32" xo="0" yo="0" id="10001618" name="inst_15EE22B5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_GUI" x="192" y="96" w="128" h="32" xo="128" yo="0" id="10001619" name="inst_AF8E354A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_GUI" x="704" y="96" w="128" h="32" xo="256" yo="0" id="10001620" name="inst_669DAB5A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tiles_GUI" x="704" y="128" w="128" h="32" xo="0" yo="0" id="10001629" name="inst_B0D3DA63" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="192" y="192" w="128" h="32" xo="0" yo="0" id="10001630" name="inst_29290F71" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="192" y="256" w="128" h="32" xo="0" yo="0" id="10001631" name="inst_A7FED1E0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="704" y="192" w="128" h="32" xo="0" yo="0" id="10001632" name="inst_EC416583" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="704" y="256" w="128" h="32" xo="0" yo="0" id="10001633" name="inst_778A2DFC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="96" y="192" w="96" h="32" xo="160" yo="32" id="10001634" name="inst_EC1D60F8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="96" y="256" w="96" h="32" xo="288" yo="32" id="10001635" name="inst_9D7236AE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="608" y="256" w="96" h="32" xo="288" yo="32" id="10001636" name="inst_6FEBD09D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="608" y="192" w="96" h="32" xo="160" yo="32" id="10001637" name="inst_FD12B91F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tiles_GUI" x="0" y="736" w="192" h="32" xo="448" yo="0" id="10001638" name="inst_F6FC6C0A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
