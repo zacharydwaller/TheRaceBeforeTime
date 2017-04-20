@@ -136,7 +136,7 @@ surface = surface_create(window_get_width(), window_get_height());
     {
         draw_text_color(
             window_get_width() - 75,
-            (window_get_height() / (1+i)) - 25,
+            (window_get_height() / (2-i)) - 25,
             "Laps: " + string(playerLaps[i+1]),
             c_white, c_white, c_white, c_white, 1);
     }
